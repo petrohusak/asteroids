@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Asteroids</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" onload="startMenu()">
+  <div id="startField">
+    <h1>Hello!</h1>
+    <h2>Welcome to the game "Asteroid".</h2>
+    <h3>Some rules:</h3>
+    <div id="listOfRules">
+      <ul>
+        <li>At this game you have a starship, that must destroy asteroids as much, as possible.</li>
+        <li>You are flying in the direction of the cursor.</li>
+        <li>You have infinity bullets.</li>
+        <li>You shoot in the direction you are flying.</li>
+        <li>For each large destroyed asteroid you get 100 points, for each small - 150.</li>
+        <li>Small asteroids are slightly some faster, than large ones.</li>
+      </ul>
+    </div>
+    
+    <button id="startButton" onclick="startGame()">Start game</button>
+  </div>
+
+  <div id="gameField">
+    <canvas id="canvas" width="500px" height="500px"></canvas>
+    <div id="score">Your current score:</div>
+  </div>
+
+  <div id="endField">
+    <button id="reset" onclick="startGame()">Reset game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

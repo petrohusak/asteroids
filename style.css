@@ -1,0 +1,17 @@
+#canvas{
+    outline: 2px solid #000;
+    margin:100px;
+  } 
+.invisible{
+  display: none;
+}
+
+#startField, #endField, #gameField{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
